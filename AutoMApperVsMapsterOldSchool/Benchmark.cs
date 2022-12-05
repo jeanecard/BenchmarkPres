@@ -17,7 +17,7 @@ namespace AutoMApperVsMapsterOldSchool_Net6
             List<UserDto> dummyAutomapper = new List<UserDto> { };
             List<UserDto> dummyMapster = new List<UserDto> { };
 
-            //START
+            //START OLDSCHOOL
             stopWatch.Start();
             for (var i = 0; i < nbIteration; i++)
             {
@@ -31,7 +31,7 @@ namespace AutoMApperVsMapsterOldSchool_Net6
             Console.WriteLine(oldSchoolReport);
 
 
-            //START
+            //START AUTOMAPPER
             stopWatch.Restart();
             for (var i = 0; i < nbIteration; i++)
             {
@@ -44,7 +44,7 @@ namespace AutoMApperVsMapsterOldSchool_Net6
             sb.AppendLine(autoMapperReport);
             Console.WriteLine(autoMapperReport);
 
-            //START
+            //START MAPSTER
             stopWatch.Restart();
             for (var i = 0; i < nbIteration; i++)
             {

@@ -1,0 +1,40 @@
+Pour OldSchool :10 données converties en 3978300 ns
+Pour AutoMapper :10 données converties en 165635000 ns
+Pour Mapster :10 données converties en 585700800 ns
+---------------------------------------------------
+Pour OldSchool :10 données converties en 8700 ns
+Pour AutoMapper :10 données converties en 22100 ns
+Pour Mapster :10 données converties en 10700 ns
+---------------------------------------------------
+Pour OldSchool :10 données converties en 4700 ns
+Pour AutoMapper :10 données converties en 20400 ns
+Pour Mapster :10 données converties en 9900 ns
+---------------------------------------------------
+Pour OldSchool :10 données converties en 7100 ns
+Pour AutoMapper :10 données converties en 19800 ns
+Pour Mapster :10 données converties en 12100 ns
+---------------------------------------------------
+Pour OldSchool :10 données converties en 14200 ns
+Pour AutoMapper :10 données converties en 24100 ns
+Pour Mapster :10 données converties en 15600 ns
+---------------------------------------------------
+Pour OldSchool :10 données converties en 8500 ns
+Pour AutoMapper :10 données converties en 21800 ns
+Pour Mapster :10 données converties en 15600 ns
+---------------------------------------------------
+Pour OldSchool :10 données converties en 5800 ns
+Pour AutoMapper :10 données converties en 21300 ns
+Pour Mapster :10 données converties en 16000 ns
+---------------------------------------------------
+Pour OldSchool :10 données converties en 7000 ns
+Pour AutoMapper :10 données converties en 43400 ns
+Pour Mapster :10 données converties en 33700 ns
+---------------------------------------------------
+Pour OldSchool :10 données converties en 9500 ns
+Pour AutoMapper :10 données converties en 24000 ns
+Pour Mapster :10 données converties en 19000 ns
+---------------------------------------------------
+Pour OldSchool :10 données converties en 10400 ns
+Pour AutoMapper :10 données converties en 116900 ns
+Pour Mapster :10 données converties en 18700 ns
+---------------------------------------------------

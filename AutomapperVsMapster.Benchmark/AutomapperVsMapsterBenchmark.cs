@@ -8,8 +8,6 @@ using AutomapperVsMapster.ReverseMappingAndUnflattening;
 using AutomapperVsMapster.SimpleTypeMapping;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Jobs;
-using Bogus;
-using System.Collections.Generic;
 
 namespace AutomapperVsMapster.Benchmark;
 
