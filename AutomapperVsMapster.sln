@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomapperVsMapster", "Auto
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomapperVsMapster.Benchmark", "AutomapperVsMapster.Benchmark\AutomapperVsMapster.Benchmark.csproj", "{066BD588-55B1-48E7-A61C-5DCBA717B2BF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoMApperVsMapsterOldSchool", "AutoMApperVsMapsterOldSchool\AutoMApperVsMapsterOldSchool.csproj", "{1516591E-DC05-45A9-BEB7-076124DE7763}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoMapperVsMapsterOldSchool", "AutoMApperVsMapsterOldSchool\AutoMapperVsMapsterOldSchool.csproj", "{1516591E-DC05-45A9-BEB7-076124DE7763}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fakker", "Fakker\Fakker.csproj", "{0854E7C8-0668-4EB4-A29D-969CA5221147}"
 EndProject
