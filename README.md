@@ -75,6 +75,13 @@ Follow memory usage
 
 Nothing is specific and can be easily maintained.
 
+Pros : 
+- Results are easier to interpret as BenchmarkDotnet warm up the CLR before running numerous benchmarks.
+- Each instance of benchmark is run in a specific thread. This is this very thread wich is analysed (performance, memory etc..). The source code is not modified.
+- Easy reporting
+
+Cons : 
+- Performance analyse results are not that easy to interpret
 
 Sample of reporting
 ```
