@@ -7,7 +7,35 @@ https://code-maze.com/automapper-vs-mapster-dotnet/
 
 # Perfomance measurment : The Old school way
 
-Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
+AutoMapperVsMapsterOldSchool : this .net project is respsonsible of :
+- Measure performance of three ways to map simple objects from DAO => DTO in .net 7. **(System.Diagnostics.StopWatch)**
+- Report in console **(Console.WriteLine())**
+- Serialize report **(System.IO.File)**
+
+All is specific and can not be easily reused.
+
+Pros : 
+- Easy to create / run
+Cons : 
+- Hard to maintain
+- Results are hard to interpret (all iteration return a different result especially the first one)
+- Does not measure memory usage
+- Reporting is very "raw"
+
+Sample of reporting 
+Pour OldSchool :10 données converties en 3978300 ns
+Pour AutoMapper :10 données converties en 165635000 ns
+Pour Mapster :10 données converties en 585700800 ns
+---------------------------------------------------
+Pour OldSchool :10 données converties en 8700 ns
+Pour AutoMapper :10 données converties en 22100 ns
+Pour Mapster :10 données converties en 10700 ns
+---------------------------------------------------
+Pour OldSchool :10 données converties en 4700 ns
+Pour AutoMapper :10 données converties en 20400 ns
+....
+
+
 
 
 # Performance measurment : The Banchmarkdotnet way
