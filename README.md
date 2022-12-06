@@ -16,6 +16,7 @@ All is specific and can not be easily reused.
 
 Pros : 
 - Easy to create / run
+
 Cons : 
 - Hard to maintain
 - Results are hard to interpret (all iteration return a different result especially the first one)
@@ -23,6 +24,7 @@ Cons :
 - Reporting is very "raw"
 
 Sample of reporting 
+```
 Pour OldSchool :10 données converties en 3978300 ns
 Pour AutoMapper :10 données converties en 165635000 ns
 Pour Mapster :10 données converties en 585700800 ns
@@ -34,6 +36,7 @@ Pour Mapster :10 données converties en 10700 ns
 Pour OldSchool :10 données converties en 4700 ns
 Pour AutoMapper :10 données converties en 20400 ns
 ....
+```
 
 
 
