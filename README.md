@@ -128,5 +128,5 @@ Outliers
 
 + GitHub BenchmarkDotNet https://github.com/dotnet/BenchmarkDotNet
 + Best practices https://benchmarkdotnet.org/articles/guides/good-practices.html
-+ Run command in ```dotnet run -c Release -f net6.0 net7.0 --runtimes net6.0 net7.0```
++ Run command under AutomapperVsMapster.Benchmark.csproj ```dotnet run -c Release -f net6.0 net7.0 --runtimes net6.0 net7.0```
 
