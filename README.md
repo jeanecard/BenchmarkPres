@@ -7,7 +7,7 @@ https://code-maze.com/automapper-vs-mapster-dotnet/
 
 # Perfomance measurment : The Old school way
 
-AutoMapperVsMapsterOldSchool : this .net project is respsonsible of :
+**AutoMapperVsMapsterOldSchool.csproj** : this .net project is respsonsible of :
 - Measure performance of three ways to map simple objects from DAO => DTO in .net 7. **(System.Diagnostics.StopWatch)**
 - Report in console **(Console.WriteLine())**
 - Serialize report **(System.IO.File)**
@@ -40,7 +40,32 @@ Pour AutoMapper :10 données converties en 20400 ns
 
 # Performance measurment : The Banchmarkdotnet way
 
-blabla ...stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
+**AutomapperVsMapster.Benchmark.csproj** : this .net project is responsible of :
+- Measure performance of three ways to map simple objects from DAO => DTO in .net 7 and .net 6.0 **native**
+- Report in console **native**
+- Serialize report **native (html, csv etc..)**
+
+Configuration used :
+Benchmark on different OS 
+```
+[SimpleJob(RuntimeMoniker.Net70)]
+[SimpleJob(RuntimeMoniker.Net60, baseline:true)]
+```
+
+Follow memory usage
+```
+[MemoryDiagnoser(true)]
+```
+
+Nothing is specific and can be easily maintained.
+
+
+
+
+https://github.com/dotnet/BenchmarkDotNet
+
+blabla ...stores you
+r files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
 
 
