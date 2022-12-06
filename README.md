@@ -7,12 +7,16 @@ https://code-maze.com/automapper-vs-mapster-dotnet/
 
 
 # AutomapperVsMapster project
-This project is reposible of Mapster and Automapper configuration. Il is used by both BenchmarkDnotnet and "old school benchmark".
+This project is reponsible of Mapster and Automapper configuration. 
+
+It is used by both BenchmarkDnotnet and "old school benchmark".
 
 # Fakker project
 This project is responsible of 
 - Definition of DAO entities and correpsonding DTO's
 - Generation of fake data (thanks to Bogus library)
+
+It is used by both BenchmarkDnotnet and "old school benchmark".
 
 # Perfomance measurment : The old school way
 
