@@ -5,6 +5,15 @@ All source code is based on the wonderful work of code-maze available at :
 https://code-maze.com/automapper-vs-mapster-dotnet/
 
 
+# Keep in mind before going further
+All method in .net are non deterministic then all results given by benchmark (old school or via Benchmarkdotnet) are relative to :
++ The CPU(s) where benchmark is run
++ The charge on CPU(s) when the benchmark is run
++ The memory state when the benchmark is run
++ .......
++ The captain birth date
+
+**All results can be compared relatively to each other in a same benchmark session but not as an individual absolute value.**
 
 # AutomapperVsMapster project
 This project is reponsible of Mapster and Automapper configuration. 
