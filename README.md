@@ -125,5 +125,8 @@ Outliers
 
 # References
 
-1. GitHub BenchmarkDotNet https://github.com/dotnet/BenchmarkDotNet
-2. Best practivces https://benchmarkdotnet.org/articles/guides/good-practices.html
+
++ GitHub BenchmarkDotNet https://github.com/dotnet/BenchmarkDotNet
++ Best practices https://benchmarkdotnet.org/articles/guides/good-practices.html
++ Run command in ```dotnet run -c Release -f net6.0 net7.0 --runtimes net6.0 net7.0```
+
