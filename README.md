@@ -16,9 +16,9 @@ This project is responsible of
 - Definition of DAO entities and correpsonding DTO's
 - Generation of fake data (thanks to Bogus library)
 
-It is used by both BenchmarkDnotnet and "old school benchmark".
+It is used by both BenchmarkDnotnet and "Old school benchmark".
 
-# Perfomance measurment : The old school way
+# Perfomance measurment : The "Old school" way
 
 **AutoMapperVsMapsterOldSchool.csproj** : this .net project is responsible of :
 - Measure performance of three ways to map simple objects from DAO => DTO in .net 7. **(System.Diagnostics.StopWatch)**
@@ -54,7 +54,7 @@ Pour AutoMapper :10 données converties en 20400 ns
 
 
 
-# Performance measurment : The Banchmarkdotnet way
+# Performance measurment : The Benchmarkdotnet way
 
 **AutomapperVsMapster.Benchmark.csproj** : this .net project is responsible of :
 - Measure performance of three ways to map simple objects from DAO => DTO in .net 7 and .net 6.0 **native**
