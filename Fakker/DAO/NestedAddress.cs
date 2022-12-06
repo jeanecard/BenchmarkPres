@@ -1,5 +1,5 @@
-﻿namespace AutomapperVsMapster.NestedTypeMapping;
-public class Address
+﻿namespace Fakker.DAO;
+public class NestedAddress
 {
     public string AddressLine1 { get; set; } = null!;
     public string AddressLine2 { get; set; } = null!;

@@ -1,11 +1,13 @@
 ﻿using Mapster;
+using Fakker.DAO;
+using Fakker.DTO;
 
 namespace AutomapperVsMapster.NestedTypeMapping;
 public class MapsterNestedTypeMapping
 {
-    public static UserDto Map(User source)
+    public static NestedUserDto Map(NestedUser source)
     {
-        var destination = source.Adapt<UserDto>();
+        var destination = source.Adapt<NestedUserDto>();
 
         return destination;
     }

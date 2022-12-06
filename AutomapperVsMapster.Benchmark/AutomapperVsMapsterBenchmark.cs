@@ -26,8 +26,8 @@ public class AutomapperVsMapsterBenchmark
     public int SizeParam { get; set; }
 
     private Fakker.DAO.User[] _simpleObjectSource = null!;
-    private CollectionMapping.User[] _collectionObjectSource = null!;
-    private NestedTypeMapping.User[] _nestedObjectSource = null!;
+    private Fakker.DAO.CollectionUser[] _collectionObjectSource = null!;
+    private Fakker.DAO.NestedUser[] _nestedObjectSource = null!;
     private Flattened.User[] _flattenedObjectSource = null!;
     private CustomPropertyMapping.User[] _customPropertyObjectSource = null!;
     private ReverseMappingAndUnflattening.UserDto[] _reverseMappingObjectSource = null!;
@@ -76,8 +76,7 @@ public class AutomapperVsMapsterBenchmark
 
     }
 
-    //[Benchmark(Description = "Mapster_SimpleMapping_User_Duplicate")]
-
+    [Benchmark(Description = "Mapster_SimpleMapping_User_Duplicate")]
     public bool  AutoMapperSimpleObjectMappingDuplicate()
     {
         var cheatSize = Math.Min(_size, SizeParam);
