@@ -5,7 +5,7 @@ All source code is based on the wonderful work of code-maze available at :
 https://code-maze.com/automapper-vs-mapster-dotnet/
 
 
-# Perfomance measurment : The Old school way
+# Perfomance measurment : The old school way
 
 AutoMapperVsMapsterOldSchool : this .net project is respsonsible of :
 - Measure performance of three ways to map simple objects from DAO => DTO in .net 7. **(System.Diagnostics.StopWatch)**
