@@ -125,5 +125,5 @@ Outliers
 
 # References
 
-:GitHub BenchmarkDotNet https://github.com/dotnet/BenchmarkDotNet
-:Best practivces https://benchmarkdotnet.org/articles/guides/good-practices.html
+1. GitHub BenchmarkDotNet https://github.com/dotnet/BenchmarkDotNet
+2. Best practivces https://benchmarkdotnet.org/articles/guides/good-practices.html
