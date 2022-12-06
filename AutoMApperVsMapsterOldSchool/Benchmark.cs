@@ -26,8 +26,10 @@ namespace AutoMApperVsMapsterOldSchool_Net6
             }
             stopWatch.Stop();
             //STOP
+            //REPORTING
             var oldSchoolReport = $"Pour OldSchool :{dummyOldSchool.Count} données converties en {stopWatch.Elapsed.TotalNanoseconds} ns";
             sb.AppendLine(oldSchoolReport);
+            //AND REPORTING IN CONSOLE
             Console.WriteLine(oldSchoolReport);
 
 
@@ -40,8 +42,10 @@ namespace AutoMApperVsMapsterOldSchool_Net6
             }
             stopWatch.Stop();
             //STOP
+            //REPORTING
             var autoMapperReport = $"Pour AutoMapper :{dummyAutomapper.Count} données converties en {stopWatch.Elapsed.TotalNanoseconds} ns";
             sb.AppendLine(autoMapperReport);
+            //AND REPORTING IN CONSOLE
             Console.WriteLine(autoMapperReport);
 
             //START MAPSTER
@@ -53,8 +57,10 @@ namespace AutoMApperVsMapsterOldSchool_Net6
             }
             stopWatch.Stop();
             //STOP
+            //REPORTING
             var mapsterReport = $"Pour Mapster :{dummyMapster.Count} données converties en {stopWatch.Elapsed.TotalNanoseconds} ns";
             sb.AppendLine(mapsterReport);
+            //AND REPORTING IN CONSOLE
             Console.WriteLine(mapsterReport);
 
             return true;

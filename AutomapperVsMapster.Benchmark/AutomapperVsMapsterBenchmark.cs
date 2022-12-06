@@ -13,7 +13,7 @@ namespace AutomapperVsMapster.Benchmark;
 
 
 [SimpleJob(RuntimeMoniker.Net70)]
-//[SimpleJob(RuntimeMoniker.Net60, baseline:true)]
+[SimpleJob(RuntimeMoniker.Net60, baseline:true)]
 
 [MemoryDiagnoser(true)]
 //[Config(typeof(AntiVirusFriendlyConfig))]
