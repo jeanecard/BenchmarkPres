@@ -9,6 +9,7 @@ Benchmark bench = new();
 StringBuilder sb = new StringBuilder();
 
 //We launch the performance benchmark 10 times to see if the results are constants
+//Si on ne lance qu'une fois les résultats vont être très différents d'une moyenne constatée.
 for(int i =0; i < 10; i++)
 {
     bench.Launch(sb);

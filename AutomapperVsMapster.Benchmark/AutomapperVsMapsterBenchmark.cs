@@ -11,18 +11,18 @@ using BenchmarkDotNet.Jobs;
 
 namespace AutomapperVsMapster.Benchmark;
 
-
+//Paramétrage du bench pour étudier les performances sur ?net 7 et .net 6 (ce dernier va servir de référence)
 [SimpleJob(RuntimeMoniker.Net70)]
 [SimpleJob(RuntimeMoniker.Net60, baseline:true)]
-
+//Paramétrage du bench pour mesurer l'occupation mémoire
 [MemoryDiagnoser(true)]
 //[Config(typeof(AntiVirusFriendlyConfig))]
 public class AutomapperVsMapsterBenchmark
 {
     private  readonly int _size = 100;
     //Attention cheat mode le max param doit être inférieur ou égal au _size pour faciliter la présentation de la démo.
-    //[Params(1, 10)]
-    [Params(10)]
+    [Params(10, 100)]
+    //[Params(1, 10)] =>  On pourrait demander des benchs pour chacune de ces valeurs
     public int SizeParam { get; set; }
 
     private Fakker.DAO.User[] _simpleObjectSource = null!;
@@ -37,7 +37,8 @@ public class AutomapperVsMapsterBenchmark
     #region SimpleMapping
 
     //Association d'un "Before Test" avec une liste de BenchMark.
-    //Le Before test ne sera executé qu'une seule fois et bien sûr avbat le lancement des benchmarks
+    //Le Before test (SetupDataSourceForSimpleTypeMapping) ne sera executé qu'une seule fois
+    //et bien sûr avant le lancement des benchmarks AutoMapperSimpleObjectMapping, MapsterSimpleObjectMapping .. etc.
     [GlobalSetup(Targets = new[] { 
         nameof(AutoMapperSimpleObjectMapping), 
         nameof(MapsterSimpleObjectMapping),
@@ -49,7 +50,13 @@ public class AutomapperVsMapsterBenchmark
     }
 
     //Ici commence la description des Benchmarks
-    [Benchmark(Description = "AutoMapper_SimpleMapping_User")]
+    //Chacun de ces benchs va être éxecuté dans nu thread dédié, et c'est ce thread qui va être analysé, mesuré.
+
+    /// <summary>
+    /// Bench de Automapper
+    /// </summary>
+    /// <returns></returns>
+    [Benchmark(Description = "AutoMapper_SimpleMapping_User")] //Nom qui va apparaitre dans la synthèse
     public bool AutoMapperSimpleObjectMapping()
     {
         var cheatSize = Math.Min(_size, SizeParam);
@@ -59,9 +66,13 @@ public class AutomapperVsMapsterBenchmark
         {
             list.Add(AutoMapperSimpleTypeMapping.Map(_simpleObjectSource[i]));
         }
-        return list.Count != 0;
+        return list.Count != 0; // le retour d'un paramètre est une "bonne pratique"
     }
 
+    /// <summary>
+    /// Bench de Mapster
+    /// </summary>
+    /// <returns></returns>
     [Benchmark(Description = "Mapster_SimpleMapping_User")]
     public bool MapsterSimpleObjectMapping()
     {
@@ -76,6 +87,13 @@ public class AutomapperVsMapsterBenchmark
 
     }
 
+    /// <summary>
+    /// Ce bench est présent pour mettre en évidence le non déterminisme.
+    /// Les résultats de ce test doivent être proche de Mapster_SimpleMapping_User.
+    /// S'ils sont éloignés, on devrait pouvoir remarquer un nombre d'erreurs très différents dans la synthèse.
+    /// On tâche en effet de comparer à "nombre d'erreurs équivalentes"
+    /// </summary>
+    /// <returns></returns>
     [Benchmark(Description = "Mapster_SimpleMapping_User_Duplicate")]
     public bool  AutoMapperSimpleObjectMappingDuplicate()
     {
@@ -90,7 +108,10 @@ public class AutomapperVsMapsterBenchmark
         return list.Count != 0;
     }
 
-
+    /// <summary>
+    /// Bench du OldSchool : à comparer avec les résultats obtenus dans le benchmark oldSchool
+    /// </summary>
+    /// <returns></returns>
     [Benchmark(Description = "OldSchool_SimpleMapping_User")]
     public bool OldSchoolSimpleObjectMapping()
     {

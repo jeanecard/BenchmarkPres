@@ -7,7 +7,7 @@ namespace AutoMApperVsMapsterOldSchool_Net6
 {
     internal class Benchmark
     {
-        public bool Launch(StringBuilder sb)
+        public void Launch(StringBuilder sb)
         {
             int nbIteration = 10;
             Stopwatch stopWatch = new Stopwatch();
@@ -62,8 +62,6 @@ namespace AutoMApperVsMapsterOldSchool_Net6
             sb.AppendLine(mapsterReport);
             //AND REPORTING IN CONSOLE
             Console.WriteLine(mapsterReport);
-
-            return true;
         }
     }
 }
