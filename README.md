@@ -162,7 +162,7 @@ Outliers
 To enable multiple framework benchmark, add in the benchmark csproj the following config
 ```  <PropertyGroup>
     <OutputType>Exe</OutputType>
-    **<TargetFrameworks>net6.0;net7.0</TargetFrameworks>**
+    <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
