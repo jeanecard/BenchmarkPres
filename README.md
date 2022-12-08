@@ -159,3 +159,12 @@ Outliers
 + Best practices https://benchmarkdotnet.org/articles/guides/good-practices.html
 + Run command under AutomapperVsMapster.Benchmark.csproj ```dotnet run -c Release -f net6.0 net7.0 --runtimes net6.0 net7.0```
 
+To enable multiple framework benchmark, add in the benchmark csproj the following config
+```  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    **<TargetFrameworks>net6.0;net7.0</TargetFrameworks>**
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+```
+
