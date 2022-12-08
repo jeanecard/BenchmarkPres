@@ -18,7 +18,7 @@ All method in .net are non deterministic then all results given by benchmark (ol
 # AutomapperVsMapster project
 This project is reponsible of Mapster and Automapper configuration. 
 
-It is used by both BenchmarkDnotnet and "old school benchmark".
+It is used by both BenchmarkDotnet and "old school benchmark".
 
 # Fakker project
 This project is responsible of 
