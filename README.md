@@ -13,7 +13,7 @@ All method in .net are non deterministic then all results given by benchmark (ol
 + .......
 + The captain birth date
 
-**All results can be compared relatively to each other in a same benchmark session but not as an individual absolute value.**
+**All results can be compared relatively to each other in a same benchmark session but can not be cnsidered as an individual absolute value.**
 
 # AutomapperVsMapster project
 This project is reponsible of Mapster and Automapper configuration. 
