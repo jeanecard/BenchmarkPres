@@ -19,8 +19,10 @@ for(int i =0; i < 10; i++)
     //Reporting in console
     Console.WriteLine(separator);
 }
-//Serialisation of the report (a true old goog god class ....)
-var fileName = $"../../../../AutomapperVsMapster.Benchmark/BenchmarkDotNet.Artifacts/results/OLDSCHOOL_report_{Guid.NewGuid().ToString()}.txt";
+//Serialisation of the report (a true old good god class ....)
+String destDirectory = $"../../../../AutomapperVsMapster.Benchmark/BenchmarkDotNet.Artifacts/results/";
+Directory.CreateDirectory(destDirectory);
+var fileName = $"{destDirectory}/OLDSCHOOL_report_{Guid.NewGuid().ToString()}.txt";
 var stream = File.CreateText(fileName);
 stream.Write(sb.ToString().ToArray());
 stream.Close();
